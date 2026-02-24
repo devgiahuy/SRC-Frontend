@@ -1,0 +1,34 @@
+export const QUERY_KEYS = {
+    ME: ["me"] as const,
+    CITIZEN_IDENTITY: ["citizenIdentity"] as const,
+    DRIVER_LICENSE: ["driverLicense"] as const,
+    STATIONS: ["stations"] as const,
+    VEHICLE_SEGMENTS: ["vehicleSegments"] as const,
+    VEHICLE_MODELS: ["vehicleModels"] as const,
+    VEHICLE_CHECKLISTS: ["vehicleChecklists"] as const,
+    VEHICLES: ["vehicles"] as const,
+    RENTAL_CONTRACTS: ["rentalContracts"] as const,
+    USERS: ["users"] as const,
+    DISPATCH_REQUESTS: ["dispatchRequests"] as const,
+    STATION_FEEDBACKS: ["stationFeedbacks"] as const,
+    INVOICES: ["invoices"] as const,
+    TICKETS: ["tickets"] as const,
+    STATISTICS: ["statistics"] as const,
+    BUSINESS_VARIABLES: ["businessVariables"] as const,
+    BRANCHS: ["branchs"] as const,
+    VEHICLE_COMPONENTS: ["vehicleComponents"] as const,
+    BRANDS: ["brands"] as const
+    // VEHICLE: {
+    //     ALL: ["vehicles"] as const,
+    //     BY_ID: (id: string) => ["vehicles", id] as const
+    // }
+}
+
+// added: string-based keys for new query hooks
+// export const QUERY_KEY = {
+//     // AUTH: "auth",
+//     // PROFILE: "profile",
+//     // STATION: "station",
+//     // VEHICLE_SEGMENT: "vehicleSegment",
+//     // RENTAL_CONTRACTS: "rentalContracts"
+// } as const

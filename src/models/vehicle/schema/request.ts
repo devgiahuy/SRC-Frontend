@@ -1,0 +1,80 @@
+import { VehicleStatus } from "@/constants/enum"
+
+export type CreateVehicleReq = {
+    licensePlate: string
+    modelId: string
+    stationId: string
+}
+
+export type UpdateVehicleReq = {
+    licensePlate?: string
+    status?: VehicleStatus
+    modelId?: string
+    stationId?: string
+}
+
+export type CreateVehicleModelReq = {
+    name: string
+    description: string
+    costPerDay: number
+    depositFee: number
+    reservationFee: number
+    seatingCapacity: number
+    numberOfAirbags: number
+    motorPower: number
+    batteryCapacity: number
+    ecoRangeKm: number
+    sportRangeKm: number
+    brandId: string
+    segmentId: string
+    componentIds?: string[]
+}
+
+export type UpdateVehicleModelReq = {
+    name?: string
+    description?: string
+    costPerDay?: number
+    depositFee?: number
+    reservationFee?: number
+    seatingCapacity?: number
+    numberOfAirbags?: number
+    motorPower?: number
+    batteryCapacity?: number
+    ecoRangeKm?: number
+    sportRangeKm?: number
+    brandId?: string
+    segmentId?: string
+}
+
+export type UpdateModelComponentsReq = {
+    componentIds: string[]
+}
+
+export type DeleteModelImagesReq = {
+    imageIds: string[]
+}
+
+export type GetAllModelParams = {
+    name?: string
+    segmentId?: string
+}
+
+export type SearchModelParams = {
+    stationId: string
+    startDate: string
+    endDate: string
+    segmentId?: string
+}
+
+export type GetVehicleParams = {
+    name?: string
+    stationId?: string
+    status?: number
+    licensePlate?: string
+    modelId?: string
+}
+
+export type VehicleSegmentReq = {
+    name: string
+    description: string
+}
